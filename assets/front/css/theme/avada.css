@@ -1,0 +1,113 @@
+/*Enroll Page*/
+.coschool-cart-wrapper table {
+	width: 100% !important;
+}
+.coschool-student-info fieldset {
+	border: 1px solid #c7c1c1;
+}
+#coschool-coupon-apply{
+	border: 0px;
+	
+}
+#wrapper .post-content h2{
+    font-size: 25px !important;
+}
+/*Dashboard */
+
+.coschool-dm-title a{
+	color: #4a4a4a;
+}
+#current-page-selector {
+	    width: 10%;
+}
+.button{
+	border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    color: #ffffff;
+    background-color: #0170b9;
+    border-radius: 2px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1;
+}
+#date > a {
+	color: #0170b9;
+}
+#amount > a {
+	color: #0170b9;
+}
+.manage-column > a {
+	color: #0170b9;
+}
+table, td, th {
+	padding: 17px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+#the-list > tr > td {
+    border: 1px solid rgba(0,0,0,.1);
+}
+.coschool-dashboard-title{
+	font-size: 18px !important;
+}
+.coschool-user-name{
+	font-size: 20px !important;
+}
+.wp-list-table{
+	margin-bottom: 35px;
+}
+#coschool-dashboard-card-completed{
+    padding: 20px 7px !important;
+}
+/*Profile*/
+.coschool-dashboard-profile-info{
+	display: initial;
+}
+
+.coschool-cs-about ul{
+    padding: 0px;
+}
+.coschool-accordion-body ul{
+    padding: 0px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark{
+    top: 3px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark::after{
+    top: 1px;
+    left: 4px;
+    height: 8px;
+}
+.coschool-authentication .coschool-form-submit-btn{
+    padding: 10px;
+}
+.coschool-dashboard table{
+    min-width: 100%;
+}
+.coschool-accordion-body img{
+    margin-top: 7px;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul::after{
+    display: none;
+}
+.coschool-cs-author-courses{
+    display: flex;
+}
+.coschool-cs-about li{
+    display: flex;
+}
+.coschool-cs-about img{
+    margin-top: 4px;
+}
+.coschool-container .coschool-coures-items .coschool-accordion-body ul li a{
+    display: flex;
+}
+#coschool-payment-button{
+    padding: 13px;
+}

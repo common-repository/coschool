@@ -1,0 +1,99 @@
+/*Transactions*/
+#current-page-selector{
+	width: 10%;
+}
+.button{
+	border-style: solid; 
+    color: inherit;
+    border-radius: 2px;
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    border: 1px solid #0170b9;
+}
+/*Enroll*/
+#coschool-payment-button{
+	padding: 12px;
+}
+.coschool-cart-tiem-remove > a{
+	margin-top: 10px;
+}
+.coschool-container{
+	width: 80%;
+	margin: 0 auto;
+}
+.coschool-dashboard a{
+    text-decoration: none!important;
+}
+.coschool-cs-about ul{
+    padding: 0px;
+}
+.coschool-accordion-body ul{
+    padding: 0px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark{
+    top: 0px;
+}
+#coschool-coupon-apply{
+    border: unset;
+}
+.coschool-dashboard-cards{
+    gap: 4px !important;
+}
+.coschool-dashboard-card{
+    padding: 16px 1px ;
+    gap: 4px;
+}
+#coschool-user-switch{
+    padding: 12px 35px!important;
+}
+#coschool-dashboard-card-completed{
+    padding: 6px 2px ;
+
+}
+#date > a , #amount > a {
+	color: #333;
+}
+.manage-column > a {
+	color: #333;
+}
+.coschool-content-status{
+    height: 35px!important;
+    padding: 7px 15px!important;
+}
+#coschool-cart-form td{
+    background-color: unset;
+}
+.coschool-payment-wrapper thead{
+    border-top: 2px solid #fff;
+}
+#coschool-payment-form .coschool-student-info fieldset{
+    border: 1px solid #cccccc;
+}
+.coschool-dashboard-body .tablenav-pages{
+    margin-top: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .coschool-container{
+        width: 90%;
+    }
+    .coschool-ls-tabs .coschool-ls-tab-items ul::after{
+        display: none;
+    }
+    .coschool-cs-about ul{
+        padding: 0px;
+    }
+    .coschool-accordion-body ul{
+        padding: 0px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .coschool-container{
+        width: 90%;
+    }
+}

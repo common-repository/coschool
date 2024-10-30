@@ -1,0 +1,121 @@
+/*help tab*/
+#coschool-course-bundle-helps {
+    border: 1px solid #f0f0f0;
+}
+#coschool-course-bundle-helps .coschool-course-bundle-help {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 4px 8px;
+}
+#coschool-course-bundle-helps .coschool-course-bundle-help-heading {
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+#coschool-course-bundle-helps .coschool-course-bundle-help-heading a,
+#coschool-course-bundle-helps .coschool-course-bundle-help-text a {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #4256b2;
+    /*background-image: linear-gradient(60deg, #4054B2 20%, #f2295b 80%);*/
+    background-clip: text;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+}
+#coschool-course-bundle-helps
+    .coschool-course-bundle-help-heading
+    .heading-text {
+    color: #515151;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+}
+#coschool-course-bundle-helps .coschool-course-bundle-help-text > p {
+    font-size: 15px;
+}
+#coschool-course-bundle-helps
+    .coschool-course-bundle-help-text
+    > p:first-child {
+    margin: 0;
+}
+#coschool-course-bundle-helps .coschool-course-bundle-help-text {
+    padding: 8px;
+}
+
+#cx-row-coschool-course-bundle_tools-report .cx-field-wrap {
+    position: relative;
+}
+#coschool-course-bundle_report-copy {
+    position: absolute;
+    padding: 3px;
+    line-height: 0px;
+    right: 10px;
+    bottom: 20px;
+}
+/*=======new design=======*/
+#coschool-course-bundle_help .coschool-course-bundle-help-tab {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+#coschool-course-bundle_help .coschool-course-bundle-help-link {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    text-align: center;
+    width: 200px;
+    margin: 10px 0;
+    padding: 17px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #4256b2;
+    border: 1px solid #4256b2;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+#coschool-course-bundle_help .coschool-course-bundle-help-link:hover {
+    background: #4256b2;
+    color: #fff;
+}
+#coschool-course-bundle-modal {
+    position: fixed;
+    background: #c8c8c859;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#coschool-course-bundle-modal-loader {
+    position: absolute;
+}
+.course-bundle-icon {
+    height: 25px;
+    width: 22px;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+.coschool-bundle-url{
+        width: 90%;
+}
+@media only screen and (max-width: 810px) {
+    #coschool-course-bundle_help .coschool-course-bundle-help-tab {
+        grid-template-columns: 4fr 1fr;
+    }
+    #coschool-course-bundle_help .coschool-course-bundle-help-link {
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    #coschool-course-bundle_help .coschool-course-bundle-help-tab {
+        grid-template-columns: 1fr;
+    }
+    #coschool-course-bundle_help .coschool-course-bundle-help-link {
+        width: 200px;
+    }
+}
+/*end help tab*/

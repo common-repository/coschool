@@ -1,0 +1,50 @@
+.coschool-container{
+	margin: auto;
+	padding-bottom: 50px;
+}
+.coschool-dashboard{
+	min-width: 70%;
+	margin: auto;
+	background-color: #fff;
+}
+.coschool-dashboard-menubar,
+.coschool-dashboard-content{
+	padding-top: 50px;
+}
+.coschool-ls-author{
+    font-size: 15px;
+}
+.coschool-ls-duration{
+    font-size: 15px;
+}
+.coschool-container .coschool-content-status{
+    padding: 8px 16px;
+}
+.coschool-quiz-checkmark{
+	top: 11px!important;
+}
+.coschool .button-two{
+	padding: 12px;
+}
+.coschool .coschool-dashboard-body .bottom{
+	margin-top: 40px;
+}
+.coschool-mark-complete{
+    font-size: 15px!important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .coschool-container{
+        width: 90%;
+    }
+    .coschool-dashboard-content{
+    	padding: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .coschool-container{
+        width: 90%;
+    }
+}

@@ -1,0 +1,77 @@
+.coschool-container{
+    margin: auto;
+}
+.coschool-cs-author-courses{
+    display: flex;
+}
+.coschool-cs-about li{
+    display: flex;
+}
+.coschool-container .coschool-coures-items .coschool-accordion-body ul li a{
+    display: flex;
+}
+.coschool-accordion-body ul{
+    padding-left: 0px;
+}
+footer{
+    margin-top: 50px;
+}
+.coschool-course-dashboard-my-course-btn{
+    text-align: center;
+}
+#coschool-upload-btn{
+    text-align: center;
+    color: #fff;
+}
+#coschool-upload-sign-btn{
+    text-align: center;
+    color: #fff;
+}
+#coschool-user-switch{
+    padding: 10px 30px!important;
+    color: #fff;
+}
+#coschool-coupon-apply {
+    padding: 8px 20px;
+}
+.coschool-delete-btn {
+    background-color: unset!important;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.coschool-cs-about ul{
+    padding: 0px;
+}
+#coschool-payment-button{
+    padding: 10px;
+}
+.coschool-container .coschool-content-status{
+    padding: 7px 15px;
+}
+.coschool-mark-complete{
+    text-align: center;
+}
+.coschool-name .coschool-user-id{
+    margin-top: 0px;
+}
+.coschool-tab-items .coschool-ls-tab-item{
+    margin-bottom: -2px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .coschool-container{
+        width: 90%;
+    }
+    .coschool-ls-tabs .coschool-ls-tab-items ul::after{
+        display: none;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .coschool-container{
+        width: 90%;
+    }
+}

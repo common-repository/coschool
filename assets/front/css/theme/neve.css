@@ -1,0 +1,25 @@
+/*Archive Page*/
+.coschool-container{
+	margin: 0 auto;
+}
+/*Transactions*/
+#current-page-selector{
+	width: 10%;
+}
+.button{
+    border-width: 1px !important;
+}
+
+.wp-list-table > thead > tr > th, .wp-list-table > tbody > tr > td, .wp-list-table > tfoot > tr > th{
+	border: 1px solid #eee;
+}
+/*Profile*/
+.coschool-dashboard-profile-wrap{
+	display: flex;
+}
+.coschool-dashboard-profile-info{
+	display: table-footer-group;
+}
+.coschool-login-log-table > tbody > tr > td {
+	border-bottom: 1px solid #eee !important;
+}

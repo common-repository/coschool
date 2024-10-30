@@ -1,0 +1,84 @@
+.coschool-container{
+    margin: auto;
+    padding-bottom: 50px;
+}
+.coschool-dashboard{
+    max-width: 125rem!important;
+}
+.coschool h1::before,
+.coschool h2::before,
+.coschool h3::before{
+    display: none!important;
+}
+.coschool button,
+.coschool input,
+.coschool a{
+    text-decoration: none!important;
+}
+.coschool-ls-author{
+    font-size: 15px;
+}
+.coschool-ls-duration{
+    font-size: 15px;
+}
+.coschool-container .coschool-content-status{
+    padding: 6px 15px;
+}
+.coschool-mark-complete{
+    font-size: 15px!important;
+}
+.coschool .button-two{
+    padding: 12px;
+}
+.course-title{
+    margin: 0px;
+    line-height: 30px;
+}
+.coschool-dashboard .coschool-nav-items ul li a i{
+    margin-bottom: 4px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .coschool-container{
+        width: 90%;
+    }
+    .coschool-csr-review-header{
+    	justify-content: space-around;
+    }
+    .coschool-csr-review-header-left{
+    	flex-direction: column;
+    }
+    .coschool-dashboard-body table th{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .coschool-dashboard-body table td{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .coschool-dashboard-button-panel{
+        display: flex!important;
+        text-align: right!important;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .coschool-container{
+        width: 90%;
+    }
+    .coschool-dashboard-body table th{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .coschool-dashboard-body table td{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .coschool-dashboard-button-panel{
+        display: block;
+        text-align: left;
+    }
+}

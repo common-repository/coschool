@@ -1,0 +1,93 @@
+/*Dashboard*/
+.coschool a{
+	text-decoration: none!important;
+}
+.oceanwp-theme .coschool-container{
+	margin: 0 auto !important;
+}
+.coschool-nav-item > a{
+	text-decoration: none !important;
+}
+.content-area{
+	width: 100% !important;
+}
+.coschool-dashboard-cards{
+	gap: 8px !important;
+}
+
+/*Transactions*/
+
+input#current-page-selector {
+    width: 10% !important;
+}
+.manage-column > a {
+	text-decoration: none !important;
+}
+.wp-list-table > thead > tr > th {
+	border: 1px solid #e9e9e9;
+}
+.wp-list-table > tbody > tr > td {
+	border: 1px solid #e9e9e9;
+}
+.wp-list-table > tfoot > tr > th {
+	border: 1px solid #e9e9e9;
+}
+
+/*Enroll*/
+
+.coschool-cart-tiem-remove > a {
+	text-decoration: none !important;
+	margin-top: 13px;
+}
+
+.coschool-student-info fieldset:hover {
+    border: none;
+}
+#first_name{
+	background-color: none;
+}
+#coschool-dashboard-profile-form .coschool-form-inner-section input[type="submit"]{
+	font-size: 12px;
+}
+#coschool-user-switch{
+	border: unset;
+	color: #fff;
+	padding: 7px 25px!important;
+}
+.coschool-quiz-buttton-panel button{
+	padding: 15px 30px!important;
+	font-weight: 400!important;
+}
+footer{
+	margin-top: 50px!important;
+}
+.coschool-dashboard-body form input[type="number"]{
+	min-width: 100%;
+}
+.coschool-container .coschool-content-status{
+	height: 35px;
+	padding: 6px 15px;
+}
+.coschool-mark-complete{
+	height: 45px;
+	padding: 10px!important;
+}
+.coschool-dashboard-card .edc-text{
+	font-size: 12px;
+}
+.action-panel input{
+	font-size: 15px!important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .coschool-container{
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .coschool-container{
+        width: 90%;
+    }
+}

@@ -1,0 +1,1 @@
+<p><?php esc_html_e( 'Active CoSchool pro certificate', 'coschool' ); ?></p>

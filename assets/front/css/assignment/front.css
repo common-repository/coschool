@@ -1,0 +1,147 @@
+.coschool-assignment-details {}
+.coschool-assignment-details .coschool-assignment-desc {
+	font-size: 15px;
+	color: #50566c;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.coschool-assignment-content h2 {
+	font-size: 20px;
+	line-height: 43px;
+	color: #000000;
+	/* font-family: var(--coschool-font-family); */
+}
+.coschool-assignment-content p {
+	font-size: 15px;
+	line-height: 26px;
+	color: #50566c;
+	margin: 0;
+}
+/*.coschool-assignment-buttton-panel {
+	margin-top: 20px;
+}*/
+.coschool-assignment-upload-panel {
+	display: grid;
+}
+.coschool-assignment-upload-panel label {
+	font-size: 16px;
+	line-height: 16px;
+	color: #131313;
+	font-weight: 500;
+	font-family: var(--coschool-font-family);
+	padding-bottom: 15px;
+}
+.coschool-assignment-buttton-panel .coschool-assignment-upload-panel button {
+	height: 200px;
+	border-radius: 5px;
+	background-color: #f6f8fa;
+	border: 1px dashed var(--coschool-blue);
+	color: var(--coschool-blue);
+}
+.coschool-assignment-buttton-panel .coschool-assignment-upload-panel button:hover {
+	background-color: #f6f8fa;
+}
+.coschool-assignment-buttton-panel .coschool-assignment-upload-panel button span {
+	font-size: 15px;
+	line-height: 20px;
+	color: var(--coschool-blue);
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+	text-align: center;
+	width: 140px;
+	display: inline-block;
+}
+.coschool-assignment-upload-panel .coschool-upload-btn{
+	background-color: white !important;
+}
+.coschool-assignment-buttton-panel .coschool-assignment-upload-panel button span i {
+	display: block;
+	padding-bottom: 10px;
+	font-size: 22px;
+}
+.coschool-assignment-upload-list {
+	border-bottom: 1px solid var(--coschool-border);
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.coschool-assignment-upload-list ul {
+	margin-top: 15px;
+}
+.coschool-assignment-upload-list ul li {
+	border-radius: 5px;
+	background-color: #f4f6f8;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.coschool-assignment-upload-list ul li span {
+	color: #ff4800;
+}
+.coschool-assignment-upload-list ul li span.coschool-assignment-download {
+	color: #1DBF73;
+}
+.coschool-assignment-upload-list ul li span i {
+	cursor: pointer;
+}
+.coschool-assignment-buttton-panel button {
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: var(--coschool-blue);
+	color: #ffffff;
+	transition: .4s;
+	border-color: var(--coschool-blue);
+}
+.coschool-assignment-buttton-panel button:hover {
+	background-color: #0373e1;
+	border-color: #0373e1;
+	color: #ffffff;
+}
+.coschool-assignment-buttton-panel {
+	margin-top: 30px;
+}
+.coschool-assignment-buttton-panel button {
+	margin-right: 30px;
+}
+.coschool-assignment-buttton-panel button:last-child {
+	margin-right: 0;
+}
+.coschool-assignment-meta:last-of-type.coschool-green {
+	background-color: #1dbf731f;
+}
+.coschool-green span {
+	color: #1DBF73;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	.coschool-singular-grid {
+		grid-template-columns: 1fr;
+	}
+	.coschool-assignment-metas {
+		column-gap: 15px;
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+	.coschool-assignment-buttton-panel {
+		text-align: center;
+	}
+	.coschool-assignment-buttton-panel button {
+		margin-right: 15px;
+	}
+	.coschool-assignment-buttton-panel button {
+		font-size: 16px;
+		padding: 12px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.coschool-assignment-metas {
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,323 @@
+.coschool-payment-wrapper {
+	padding: 50px 0;
+}
+#coschool-cart {}
+#coschool-cart-form {}
+.coschool-cart-wrapper {}
+.coschool-cart-wrapper table {
+	border: none;
+}
+.coschool-cart-wrapper table thead {}
+.coschool-cart-wrapper table thead tr {}
+.coschool-cart-wrapper table thead tr th {
+	text-align: left;
+	border: none;
+	border-bottom: 1px solid #dddfec;
+	color: #666666;
+	font-size: 18px;
+	padding: 10px 0;
+	font-weight: 500;
+	font-family: var(--coschool-font-family);
+}
+.coschool-cart-wrapper table thead tr th.coschool-cart-price {
+	text-align: right;
+}
+.coschool-cart-wrapper table tbody {}
+.coschool-cart-wrapper table tbody tr {
+	text-align: left;
+}
+.coschool-cart-wrapper table tbody tr td {
+	color: var(--coschool-black);
+}
+.coschool-cart-wrapper table tfoot tr td {
+	color: #666666;
+	border-bottom: 0;
+}
+.coschool-cart-wrapper table td {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: var(--coschool-font-family);
+	border: none;
+	border-bottom: 1px solid #dddfec;
+	padding: 20px 0;
+}
+.coschool-cart-wrapper table tfoot tr.coschool-cart-subtotal-tr td {
+    border-bottom: 1px dashed #dddfec;
+    padding-bottom: 15px;
+}
+.coschool-cart-wrapper table td.coschool-cart-tiem-price {
+	width: 60px;
+	text-align: right;
+}
+.coschool-cart-wrapper table tfoot tr td.coschool-cart-subtotal-price {
+	text-align: right;
+	color: var(--coschool-black);
+}
+.coschool-cart-wrapper table td.coschool-cart-tiem-remove {
+	width: 30px;
+}
+.coschool-cart-wrapper table td.coschool-cart-tiem-remove a {
+	text-decoration: none;
+	font-size: 28px;
+	padding-right: 5px;
+	color: #ccc;
+	display: block;
+	line-height: 0px;
+}
+.coschool-cart-wrapper table td.coschool-cart-coupon {
+	position: relative;
+	text-align: left !important;
+	border-bottom: 0;
+	padding-bottom: 10px;
+}
+.coschool-cart-wrapper table td.coschool-cart-coupon input {
+	padding: 18px;
+	background: #fff;
+	border-radius: 7px;
+	outline: none;
+}
+#coschool-coupon:focus {
+	border: 1px solid #dddfec;
+}
+.coschool-cart-wrapper table td.coschool-cart-coupon button {
+	position: absolute;
+	font-size: 15px;
+	right: 0;
+	background: transparent;
+	color: var(--coschool-blue);
+	padding: 20px 30px;
+	border: unset;
+	cursor: pointer;
+}
+.coschool-cart-wrapper table tfoot tr td.coschool-cart-total-price {
+	text-align: right;
+	color: var(--coschool-black);
+}
+.coschool-student-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+.logged-in .coschool-student-info {
+    grid-template-columns: repeat(3, 1fr);
+}
+.coschool-student-info fieldset {
+    border-radius: 7px;
+    padding: 0 10px;
+    transition: .4s;
+    position: relative;
+    border: 1px solid #cccccc;
+    background-color: unset;
+}
+.coschool-student-info fieldset:hover {
+    border: 1px solid #cccccc!important;
+}
+
+.coschool-student-info fieldset input{
+    border: none!important;
+    background-color: unset!important;
+}
+.coschool-student-info fieldset legend{
+    border: none;
+    width: unset;
+    background-color: unset;
+}
+.coschool-student-info fieldset span.required {
+    position: absolute;
+    bottom: -12px;
+    left: 18px;
+    background-color: #fde8e8;
+    color: red;
+    padding: 2px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    display: none;
+}
+.coschool-student-info fieldset.required span.required {
+    display: block;
+}
+.coschool-student-info fieldset:hover {
+	border: 1px solid var(--coschool-blue);
+}
+.coschool-student-info fieldset legend {
+	margin: 0;
+	color: #7F7F7F;
+	font-size: 16px;
+}
+.coschool-student-info fieldset input {
+	background: transparent;
+	width: 100%;
+	outline: none;
+	border: none;
+	box-shadow: unset;
+}
+.coschool-student-info fieldset.required {
+    border-color: red;
+}
+#coschool-payment-methods {
+	margin-top: 50px;
+}
+#coschool-payment {}
+
+.coschool_payment_form {
+	display: none;
+	transition: all 0.4s;
+}
+input[name=payment_method]:checked ~ .coschool_payment_form {
+	display: block;
+}
+.coschool-student-info label {
+	display: inline-block;
+	width: 120px;
+}
+#coschool-cart tfoot {
+	border-top: 2px solid #ededed;
+	border-bottom: 2px solid #ededed;
+}
+#coschool-cart td:last-child {
+	text-align: right;
+}
+#coschool-coupon {
+	width: 100%;
+}
+.coschool-payment-methods-wrap {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+}
+.coschool-payment-methods-wrap .payment_method {
+	margin-bottom: 15px;
+}
+.coschool-payment-methods-wrap .payment_method:last-child {
+	margin-bottom: 0;
+}
+.coschool-payment-methods-wrap .payment_method input {
+}
+.coschool-payment-methods-wrap .payment_method label {
+	font-size: 15px;
+	color: #484848;
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+}
+.coschool-payment-methods-wrap .payment_method input[type="radio"] {
+	-ms-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transition: 0.2s all linear;
+	margin-right: 10px;
+	width: 12px;
+	height: 12px;
+	background-color: #fff; 
+	border: 1px solid #707070;
+	border-radius: 50%;
+}
+.coschool-payment-methods-wrap .payment_method input:checked {
+	border: 1px solid #fff;
+	background-color: var(--coschool-blue);
+	outline: unset !important;
+	box-shadow: 0 0 0 1px var(--coschool-blue);
+	width: 12px;
+	height: 12px;
+}
+.payment_method .coschool_payment_form {
+	margin-left: 28px;
+}
+.coschool-payment-wrapper h2,
+#coschool-payment-student h2,
+#coschool-payment-methods h2 {
+	font-size: 20px;
+	line-height: 16px;
+	color: #131313;
+	font-weight: 600;
+	font-family: "Montserrat";
+}
+#coschool-payment-submit {
+	margin-top: 30px;
+}
+#coschool-payment-submit input {}
+#coschool-payment-button {
+    border-radius: 5px;
+    background-color: var(--coschool-blue);
+    display: block;
+    width: 100%;
+    transition: .4s;
+    font-size: 16px;
+    border: unset;
+    padding: 15px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: none;
+    cursor: pointer;
+}
+#coschool-payment-button:hover {
+	background-color: var(--coschool-blue);
+}
+#coschool-payment-submit .coschool-payment-button.disabled {
+	background-color: #ddd;
+	cursor: not-allowed;
+}
+.coschool-cart-wrapper table tr.coschool-cart-subtotal-tr td {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.coschool-cart-wrapper table tr.coschool-cart-discount-tr td {
+	padding-top: 10px;
+	border-bottom: 1px dashed #dddfec;
+}
+.coschool-cart-wrapper table tr.coschool-cart-discount-tr td.coschool-cart-discount-price {
+	text-align: right;
+	color: var(--coschool-blue);
+    width: 85px;
+    padding-top: 20px;
+}
+.coschool-cart-wrapper table td.coschool-cart-tiem-price del {
+	color: #666;
+	padding-right: 10px;
+}
+.coschool-cart-wrapper table td.coschool-cart-coupon label {
+	padding-bottom: 6px;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: underline;
+	color: var(--coschool-blue);
+}
+.coschool-cart-wrapper table td.coschool-cart-coupon label i {
+	padding-left: 5px;
+}
+@media only screen and (max-width: 767px) {
+	.coschool-student-info fieldset legend {
+		font-size: 14px;
+	}
+	.coschool-cart-wrapper table td {
+		font-size: 14px;
+	}
+	.coschool-payment-wrapper h2, #coschool-payment-student h2, #coschool-payment-methods h2 {
+		font-size: 16px;
+	}
+	.coschool-payment-methods-wrap .payment_method label {
+		font-size: 14px;
+	}
+	.coschool-payment-methods-wrap .payment_method input[type="radio"] {
+		width: 12px;
+		height: 12px;
+	}
+	.coschool-payment-methods-wrap .payment_method input:checked {
+		width: 12px;
+		height: 12px;
+	}
+	.coschool-cart-wrapper table thead tr th {
+		font-size: 16px;
+	}
+	#coschool-payment-button {
+		font-size: 14px;
+	}
+	.coschool-student-info {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 15px;
+	}
+}

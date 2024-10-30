@@ -1,0 +1,283 @@
+:root {
+  --coschool-active: #34B487;
+  --coschool-pending: #F8BA03;
+  --coschool-ongoing: #09A1FE;
+  --coschool-cancelled: #707070;
+  --coschool-refunded: #bd1604;
+  --coschool-complete: #2ba500;
+  --coschool-course: #fbad41;
+  --coschool-lesson: #f4f4f4;
+  --coschool-quiz: #eee;
+  --coschool-assignment: Graphik;
+}
+[data-page=Current] { /*for certificate builder*/
+    display: none;
+}
+.toplevel_page_coschool .wp-menu-image img {
+	width: 20px;
+}
+.cx-icon-coschool {
+    width: 24px;
+    margin-bottom: -4px;
+}
+/*help tab*/
+#coschool-helps{
+	border: 1px solid #f0f0f0;
+}
+#coschool-helps .coschool-help{
+	border-bottom: 1px solid #f0f0f0;
+	padding: 4px 8px;
+}
+#coschool-helps .coschool-help-heading {
+	margin: 5px 0;
+	font-size: 14px;
+	cursor: pointer;
+}
+#coschool-helps .coschool-help-heading a, 
+#coschool-helps .coschool-help-text a{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: #4256b2;
+	/*background-image: linear-gradient(60deg, #4054B2 20%, #f2295b 80%);*/
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 300;
+}
+#coschool-helps .coschool-help-heading .heading-text {
+	color: #515151;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 300;
+}
+#coschool-helps .coschool-help-text > p {
+	font-size: 15px;
+}
+#coschool-helps .coschool-help-text > p:first-child {
+	margin: 0;
+}
+#coschool-helps .coschool-help-text {
+	padding: 8px;
+}
+/*loader design*/
+#coschool-loader-container {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #1111113d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+#coschool-loader {
+  border: 16px solid transparent;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1.5s linear infinite; /* Safari */
+  animation: spin 1.5s linear infinite;
+}
+.coschool-bundle-courses {
+	margin: 0;
+}
+.coschool-bundle-url {
+    width: 100%;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*=======new design=======*/
+#coschool_help .coschool-help-tab {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+#coschool_help .coschool-help-link {
+	display: block;
+	text-decoration: none;
+	background: #fff;
+	text-align: center;
+	width: 200px;
+	margin: 10px 0;
+	padding: 17px;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #4256b2;
+	border: 1px solid #4256b2;
+	margin-bottom: 20px;
+	transition: .4s;
+}
+#coschool_help .coschool-help-link:hover {
+	background: #4256b2;
+	color: #fff;
+}
+@media only screen and (max-width : 810px) {
+	#coschool_help .coschool-help-tab {
+		grid-template-columns: 4fr 1fr;
+	}
+	#coschool_help .coschool-help-link{
+		width: 150px;
+	}
+}
+@media only screen and (max-width : 420px) {
+	#coschool_help .coschool-help-tab {
+		grid-template-columns: 1fr;
+	}
+	#coschool_help .coschool-help-link{
+		width: 200px;
+	}
+}
+/*end help tab*/
+.postbox .cx-shadow:hover {
+    box-shadow: inherit;
+}
+.rating.column-rating span {
+    color: #ff7600;
+}
+#coschool-reports, #coschool-share-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.coschool-report {
+    background: #fff;
+    padding: 20px;
+}
+
+/*instaructor page*/
+button.coschool-instructor-user-action {
+	border: none;
+	background: no-repeat;
+	text-decoration: underline;
+	color: #555c63;
+	cursor: pointer;
+}
+
+/*Review btn*/
+.coschool-review-btn {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+}
+.coschool-review-btn[data-type="right"] .dashicons{
+	color: #32cb65;
+}
+.coschool-review-btn[data-type="wrong"] .dashicons{
+	color: #df3333;
+}
+.coschool-status {
+    width: 70px;
+    border: 0px;
+    font-size: 11px;
+    padding: 4px;
+    border-radius: 3px;
+}
+.coschool-status-active {
+	color: #fff;
+	background: var(--coschool-active);
+}
+.coschool-status-pending {
+	color: #fff;
+	background: var(--coschool-pending);
+}
+.coschool-status-ongoing {
+	color: #fff;
+	background: var(--coschool-ongoing);
+}
+.coschool-status-refunded {
+	color: #fff;
+	background: var(--coschool-refunded);
+}
+.coschool-status-cancelled {
+	color: #fff;
+	background: var(--coschool-cancelled);
+}
+.coschool-status-complete {
+	color: #fff;
+	background: var(--coschool-complete);
+}
+.coschool-course-banner-uploader {
+	text-align: center;
+}
+.coschool-banner-uploader-btn {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	display: unset;
+	color: #b5b5b5;
+}
+.coschool-banner-uploader-btn::before {
+	font-size: 60px;
+}
+.coschool-course-banner-uploader p {
+	margin: 0;
+}
+#coschool-course-banner-preview img {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+.coschool-course-banner-cancel {
+	text-align: center;
+	padding-top: 15px;
+}
+.coschool-banner-cancel-btn {
+	color: #b32d2e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#coschool-course-banner-wrap {
+	padding: 10px 0;
+}
+/*edd chosen issue */
+.cx-field-wrap .chosen-container .search-field input{
+	width: 0 !important;
+}
+#coschool-lesson-settings .cx-wrapper{
+	margin-bottom: unset;
+}
+#coschool-lesson-settings .cx-sections-wrapper{
+	margin-bottom: 60px;
+}
+#coschool-quiz-settings .cx-wrapper{
+	margin-bottom: unset;
+}
+#coschool-quiz-settings .cx-sections-wrapper{
+	margin-bottom: 60px;
+}
+#coschool-assignment-settings .cx-wrapper{
+	margin-bottom: unset;
+}
+#coschool-assignment-settings .cx-sections-wrapper{
+	margin-bottom: 60px;
+}
+
+/*promo-holiday-deals temp */
+.cx-promo-image {
+	padding: 0px!important;
+	line-height: 0px;
+	border: unset;
+}
+#promo-holiday-deals{
+	max-width: 100%;
+}
+.notice-dismiss::before{
+	color: #fff;
+}
+.cx-wrapper{
+	padding-bottom: 150px !important;
+}

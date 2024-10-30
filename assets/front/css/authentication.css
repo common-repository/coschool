@@ -1,0 +1,100 @@
+.coschool-authentication{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+.coschool-authentication form {
+	width: 600px;
+	margin: auto;
+}
+.coschool-authentication fieldset {
+	border-radius: 5px;
+	border: 1px solid #dddfec;
+	padding: 30px 40px;
+}
+.coschool-authentication .coschool-form-group {
+	margin-bottom: 15px;
+}
+.coschool-authentication fieldset legend {
+	font-size: 30px;
+	line-height: 16px;
+	color: #000000;
+	font-weight: 700;
+	font-family: var(--coschool-font-family);
+	margin: 0;
+}
+.coschool-authentication .login-username label, .coschool-authentication .login-password label, .coschool-form-group label {
+	display: block;
+	font-size: 18px;
+	line-height: 16px;
+	color: #000000;
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+	opacity: 0.7;
+	margin-top: 10px;
+}
+.coschool-authentication .login-username input, .coschool-authentication .login-password input, .coschool-form-group .coschool-form-input {
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	width: 100%;
+	padding-left: 0;
+
+}
+.coschool-authentication .login-username input:focus,
+.coschool-authentication .coschool-form-group .coschool-form-input:focus,
+.coschool-authentication .login-username input[type="text"]:focus,
+.coschool-authentication .coschool-form-group .coschool-form-input[type="text"]:focus,
+.coschool-authentication .login-username input[type="email"]:focus,
+.coschool-authentication .coschool-form-group .coschool-form-input[type="email"]:focus,
+.coschool-authentication .coschool-form-group .coschool-form-input[type="password"]:focus,
+.coschool-authentication .login-password input[type="password"]:focus {
+	border-bottom: 1px solid var(--coschool-blue);
+	outline: none;
+}
+.coschool-form-group.coschool-terms-condition label {
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+.coschool-authentication .login-submit {
+	margin: 0;
+}
+.coschool-authentication .coschool-form-group #confirm_password {
+	margin: 0;
+}
+.coschool-authentication [type='submit'] {
+	margin: 0;
+	border-radius: 7px;
+	background-color: var(--coschool-blue)!important;
+	width: 100%;
+	font-size: 20px;
+	line-height: 16px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+	padding: 13px;
+	border: unset;
+}
+.coschool-authentication .coschool-form-submit-btn[disabled] {
+	opacity: .6;
+}
+.coschool-register-notice {
+	margin: 0;
+}
+.coschool-register-notice.success {
+	color: #2cbc63;
+}
+.coschool-register-notice.error {
+	color: #f00;
+}
+#coschool-user-status-notice {
+	background: #fffae9;
+	border: 1px solid #f0c727;
+	text-align: center;
+	color: #cca200;
+	border-radius: 4px;
+	padding: 20px 30px;
+	font-size: 18px;
+	font-family: 'DM sans';
+}

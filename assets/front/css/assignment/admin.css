@@ -1,0 +1,106 @@
+/*help tab*/
+#coschool-assignment-helps{
+	border: 1px solid #f0f0f0;
+}
+#coschool-assignment-helps .coschool-assignment-help{
+	border-bottom: 1px solid #f0f0f0;
+	padding: 4px 8px;
+}
+#coschool-assignment-helps .coschool-assignment-help-heading {
+	margin: 5px 0;
+	font-size: 14px;
+	cursor: pointer;
+}
+#coschool-assignment-helps .coschool-assignment-help-heading a, 
+#coschool-assignment-helps .coschool-assignment-help-text a{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: #4256b2;
+	/*background-image: linear-gradient(60deg, #4054B2 20%, #f2295b 80%);*/
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 300;
+}
+#coschool-assignment-helps .coschool-assignment-help-heading .heading-text {
+	color: #515151;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 300;
+}
+#coschool-assignment-helps .coschool-assignment-help-text > p {
+	font-size: 15px;
+}
+#coschool-assignment-helps .coschool-assignment-help-text > p:first-child {
+	margin: 0;
+}
+#coschool-assignment-helps .coschool-assignment-help-text {
+	padding: 8px;
+}
+
+#cx-row-coschool-assignment_tools-report .cx-field-wrap {
+	position: relative;
+}
+#coschool-assignment_report-copy {
+    position: absolute;
+    padding: 3px;
+    line-height: 0px;
+    right: 10px;
+    bottom: 20px;
+}
+=======new design=======
+#coschool-assignment_help .coschool-assignment-help-tab {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+#coschool-assignment_help .coschool-assignment-help-link {
+	display: block;
+	text-decoration: none;
+	background: #fff;
+	text-align: center;
+	width: 200px;
+	margin: 10px 0;
+	padding: 17px;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #4256b2;
+	border: 1px solid #4256b2;
+	margin-bottom: 20px;
+	transition: .4s;
+}
+#coschool-assignment_help .coschool-assignment-help-link:hover {
+	background: #4256b2;
+	color: #fff;
+}
+#coschool-assignment-modal {
+    position: fixed;
+    background: #c8c8c859;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#coschool-assignment-modal-loader {
+    position: absolute;
+}
+@media only screen and (max-width : 810px) {
+	#coschool-assignment_help .coschool-assignment-help-tab {
+		grid-template-columns: 4fr 1fr;
+	}
+	#coschool-assignment_help .coschool-assignment-help-link{
+		width: 150px;
+	}
+}
+@media only screen and (max-width : 420px) {
+	#coschool-assignment_help .coschool-assignment-help-tab {
+		grid-template-columns: 1fr;
+	}
+	#coschool-assignment_help .coschool-assignment-help-link{
+		width: 200px;
+	}
+}
+/*end help tab*/

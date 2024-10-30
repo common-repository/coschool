@@ -1,0 +1,82 @@
+.coschool-dm-action > a {
+	text-decoration: none !important;
+}
+.coschool-dm-title > a {
+	text-decoration: none !important;
+}
+.manage-column > a{ 
+	color: inherit;
+}
+.manage-column > a{
+	text-decoration: none !important;
+}
+.wp-list-table > thead > tr > th, .wp-list-table > tbody > tr > td, .wp-list-table > tfoot > tr > th{
+	border: 1px solid #eee;
+}
+.coschool-login-log-table > tbody > tr > td {
+	border-bottom: 1px solid #eee !important;
+}
+.coschool-dashboard-cards{
+	gap: 3px !important;
+}
+#coschool-dashboard-card-completed{
+	gap: 5px;
+    padding: 20px 5px;
+}
+.coschool-student-info fieldset {
+	border: 1px solid #c7c1c1;
+	height: 70px;
+}
+.coschool-cart-tiem-remove > a {
+	margin-top: 12px;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul::after{
+	display: none;
+}
+.coschool-cs-author-courses{
+	display: flex;
+}
+.coschool-cs-about li{
+	display: flex;
+}
+.coschool-csr-card{
+	grid-template-columns: 1fr 3fr;
+}
+.coschool-course-progress-section a{
+	display: flex;
+}
+.coschool-course-progress-section span{
+	margin-top: 5px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark::after{
+	left: 4px;
+	top: 0px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark{
+	top: 4px;
+}
+.coschool-accordion-body a img{
+	margin-top: -5px;
+}
+.coschool-container .coschool-content-status{
+	padding: 7px 15px;
+}
+#coschool-cart th{
+
+}
+#coschool-payment-button{
+	padding: 10px;
+}
+body #coschool-cart-form th,
+body #coschool-cart-form td{
+	background-color: unset!important;
+}
+.coschool-student-info legend{
+	padding: 0px;
+}
+#coschool-user-switch{
+	padding: 10px 30px!important;
+}
+.coschool-dashboard a{
+	text-decoration: none!important;
+}

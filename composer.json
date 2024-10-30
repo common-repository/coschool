@@ -1,0 +1,20 @@
+{
+    "authors": [
+        {
+            "name": "Codexpert",
+            "email": "hi@codexpert.io"
+        }
+    ],
+    "require": {
+        "codexpert/plugin": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codexpert\\CoSchool\\" : "src/",
+            "Codexpert\\CoSchool\\App\\" : "app/",
+            "Codexpert\\CoSchool\\Abstracts\\" : "abstracts/",
+            "Codexpert\\CoSchool\\Third_Party\\" : "thirdparty/"
+        },
+        "files": [ "inc/functions.php" ]
+    }
+}

@@ -1,0 +1,341 @@
+.coschool-quiz-details {}
+.coschool-quiz-details .coschool-quiz-desc {
+	font-size: 15px;
+	color: #50566c;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.coschool-quiz-metas .coschool-quiz-meta {
+	font-size: 14px;
+	color: #50566c;
+}
+.coschool-quiz-metas .coschool-quiz-meta span {
+	padding-right: 5px;
+}
+.coschool-quiz-meta:last-of-type {
+	margin-left: auto;
+	border-radius: 5px;
+	background-color: #e9edff;
+	padding: 8px 20px;
+	color: #335AFF;
+	font-size: 14px;
+}
+.coschool-quiz-content {
+	border-radius: 5px;
+	border: 1px solid var(--coschool-border);
+	padding: 20px;
+}
+.coschool-quiz-content h2 {
+	font-size: 24px;
+	line-height: 43px;
+	color: #000000;
+	font-family: var(--coschool-font-family);
+}
+.coschool-quiz-content p {
+	font-size: 15px;
+	line-height: 26px;
+	color: #50566c;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.coschool-quiz-details .coschool-quiz-buttton-panel button {
+	border-radius: 7px;
+	background-color: var(--coschool-blue)!important;
+	font-size: 16px;
+	color: #ffffff;
+	border: 1px solid var(--coschool-blue)!important;
+	margin-top: 20px;
+	padding: 10px 30px;
+	transition: .4s;
+	margin: 0;
+	text-transform: unset;
+}
+.coschool-quiz-buttton-panel button:hover {
+	border: 1px solid #0373e1;
+	background-color: #0373e1;
+}
+.coschool-quiz-answer {
+	display: grid;
+	justify-content: flex-start;
+	gap: 15px;
+	margin-top: 20px;
+}
+.coschool-quiz-label {
+	display: inline-block;
+	position: relative;
+	/* cursor: pointer; */
+	/* font-size: 22px; */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* border: 1px solid var(--coschool-border); */
+	/* min-width: 300px; */
+	/* border-radius: 9px; */
+	/* padding: 6px 10px; */
+	color: #50566c;
+	font-size: 16px;
+	padding-left: 25px;
+}
+.coschool-quiz-label input {
+  opacity: 0;
+}
+.coschool-quiz-label .coschool-quiz-checkmark {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	border-radius: 16px;
+	background-color: transparent;
+	border: 1px solid #707070;
+}
+.coschool-quiz-label:hover input ~ .coschool-quiz-checkmark {
+	/*background-color: #9f98f9;*/
+	border: 1px solid #9f98f9;
+}
+.coschool-quiz-label input:checked ~ .coschool-quiz-checkmark {
+	background-color: var(--coschool-blue);
+	border: 1px solid transparent;
+}
+.coschool-quiz-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.coschool-quiz-label input:checked ~ .coschool-quiz-checkmark:after {
+  display: block;
+}
+.coschool-quiz-label .coschool-quiz-checkmark::after {
+	left: 6px;
+	top: 3px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.coschool-single-question .coschool-quiz-question {
+	display: none;
+}
+.coschool-single-question .coschool-quiz-question:first-child {
+    display: block;
+}
+.coschool-single-question .coschool-quiz-buttton-panel {
+	display: none;
+}
+
+.coschool-next-question-wrapper {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+.coschool-next-question-wrapper button {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    transition: .4s;
+    text-transform: unset;
+	font-size: 16px;
+    color: #ffffff;
+}
+.coschool.single-quiz .coschool-single-question #prev-btn {
+	display: none;
+	border: 1px solid #FF5F7E!important;
+	background-color: #FF5F7E!important;
+}
+.coschool-next-question-wrapper #next-btn {
+    background-color: var(--coschool-blue)!important;
+    border: 1px solid var(--coschool-blue)!important;
+}
+.coschool-quiz-message {
+    display: none;
+    padding: 7px 20px;
+    background-color: #ffeaea;
+    font-size: 15px;
+    color: #ff4a4a;
+    margin-top: 10px;
+}
+.coschool-quiz-question {
+	margin-bottom: 50px;
+}
+.coschool-quiz-question .paragraph textarea{
+	box-shadow: unset;
+	background: unset;
+}
+.coschool-quiz-question .text input{
+	box-shadow: unset;
+	background: unset;
+	min-height: 35px;
+}
+.coschool-quiz .coschool-quiz-question:last-child {
+	margin-bottom: 0;
+}
+.coschool-quiz-progress-bar-panel {
+	position: relative;
+	padding-top: 0;
+	margin-bottom: 45px;
+}
+.coschool-quiz-progress-content {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 0;
+}
+.coschool-quiz-progress-bar {
+	background-color: var(--coschool-blue);
+	height: 4px;
+	z-index: 99;
+	position: relative;
+}
+.coschool-quiz-progress-content h4 {
+	font-size: 14px;
+	color: #161616;
+	font-weight: 300;
+}
+.coschool-quiz-progress-content h4 {
+	font-size: 14px;
+	color: #161616;
+	font-weight: 400;
+}
+.coschool-quiz-progress-content::after {
+	content: '';
+	width: 100%;
+	height: 4px;
+	background-color: #dddfec;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+}
+.coschool-quiz-result-metas {
+	display: flex;
+	column-gap: 30px;
+	margin: 20px 0;
+	border-top: 1px solid #dddfec;
+	border-bottom: 1px solid #dddfec;
+	padding: 10px 0;
+	justify-content: space-between;
+}
+.coschool-quiz-result-meta {
+	font-size: 15px;
+	color: var(--coschool-black);
+	font-weight: 600;
+	font-family: Montserrat;
+}
+.coschool-quiz-prticipation {
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+	padding: 30px;
+	font-size: 15px;
+}
+table.coschool-quiz-result-table {
+	margin: 0;
+	box-shadow: 2px 4px 30px 0 #0000010d;
+	border: 2px solid #f3f3f3;
+	border-radius: 7px;
+}
+table.coschool-quiz-result-table thead {}
+table.coschool-quiz-result-table thead tr {
+	height: 55px; 
+	border-radius: 11px;
+	background-color: #e4dcff;
+}
+table.coschool-quiz-result-table thead tr th {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	color: var(--coschool-black);
+	font-family: Montserrat;
+	font-size: 14px;
+}
+table.coschool-quiz-result-table tbody {}
+table.coschool-quiz-result-table tbody tr {
+	border: none;
+}
+table.coschool-quiz-result-table tbody tr td {
+	border: none;
+	padding: 10px 15px;
+	color: #50566c;
+}
+table.coschool-quiz-result-table tbody tr td span {
+	width: 30px;
+	height: 30px;
+	border-radius: 16px;
+	/* background-color: #000000; */
+	border: 1px solid #505050;
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+}
+.coschool-quiz-answer.paragraph,
+.coschool-quiz-answer.text {
+	justify-content: normal;
+}
+.coschool-quiz-answer textarea, .coschool-quiz-answer input[type="text"] {
+	border: 1px solid var(--coschool-border)!important;
+	border-radius: 4px;
+	outline: none;
+}
+.coschool-required-question {
+    color: #f00;
+}
+/*Floating Counter*/
+#coschool-floating-counter {
+	position: fixed;
+	left: 0;
+	background: #fff;
+	padding: 11px 13px;
+	border-radius: 4px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	color: #ccc;
+	display: none;
+	z-index: 999999999;
+}
+#coschool-floating-counter .coschool-quiz-progress-content {
+	display: block;
+	text-align: center;
+}
+#coschool-floating-counter .coschool-quiz-progress-content h4 {
+	color: #1dbf73;
+	font-weight: 500;
+	font-size: 20px;
+}
+#coschool-floating-counter .coschool-quiz-progress-content h4:first-child {
+	margin-bottom: 0;
+	color: #4d4d4d;
+	font-size: 15px;
+}
+#coschool-floating-counter .coschool-quiz-progress-content:after {
+	display: none;
+}
+#coschool-retake-timer-container {
+	padding-left: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	.coschool-singular-grid {
+		grid-template-columns: 1fr;
+	}
+	.coschool-quiz-metas {
+		column-gap: 15px;
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.coschool-quiz-metas {
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+}

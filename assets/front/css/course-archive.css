@@ -1,0 +1,155 @@
+/* feel free to remove these css as required */
+.coschool-courses-header h1 {
+    font-size: 28px;
+}
+.course-layout-toggle-btn {
+    margin: 10px auto;
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+.course-layout-toggle-btn i{
+    cursor: pointer;
+}
+#coschool-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+#coschool-courses a {
+    text-decoration: none;
+}
+.course-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #fff;
+    color: #29303b;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.course-content {
+    padding: 10px 20px;
+}
+.course-thumbnail img {
+    width: 100%;
+}
+.course-author {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #505050;
+    font-weight: 400;
+}
+.course-author a{
+    color: #000000;
+}
+.course-author-thumbnail {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+.course-title {
+    margin-bottom: 15px;
+}
+.course-title a {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+.course-summery {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 11px auto;
+}
+.course-rating {
+    color: var(--coschool-yellow);
+}
+.course-rating .dashicons {
+    height: 15px;
+    width: 15px;
+    font-size: 17px;
+    margin-right: 3px;
+}
+.course-price {
+    font-size: 20px;
+    line-height: 19px;
+    color: #1f73e2;
+    font-weight: 600;
+    font-family: var(--coschool-font-family);
+}
+.course-footer {
+    text-align: center;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+}
+.coschool .course-enrol-btn {
+    border: 1px solid #1f73e2;
+    text-decoration: none;
+    background: #1f73e2;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: var(--coschool-font-family);
+    width: 100%;
+}
+.coschool .course-enrol-btn:hover {
+    background: #3b90ff;
+    border: 1px solid #3b90ff;
+    color: #fff;
+}
+/*List view*/
+#coschool-courses.list{
+    grid-template-columns: repeat(1, 1fr);
+}
+.course-card.list {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    flex-direction: row;
+    align-items: center;
+}
+.course-card.list .course-summery {
+    display: grid;
+    margin: auto;
+    gap: 10px;
+    height: auto;
+}
+.course-card.list .course-footer {
+    padding: 0;
+    padding-right: 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    #coschool-courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #coschool-courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

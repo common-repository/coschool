@@ -1,0 +1,799 @@
+@font-face {
+	font-family: 'DM Sans';
+	src: url('../fonts/DM_Sans/DMSans-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DM Sans';
+	src: url('../fonts/DM_Sans/DMSans-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DM Sans';
+	src: url('../fonts/DM_Sans/DMSans-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/static/Montserrat-SemiBold.ttf');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/static/Montserrat-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/static/Montserrat-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik/GraphikBold.otf');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik/GraphikSemibold.otf');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik/GraphikMedium.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik/GraphikRegular.otf');
+	font-weight: 400;
+	font-style: normal;
+}
+:root {
+  --coschool-white: #ffffff;
+  --coschool-black: #000000;
+  --coschool-blue: #0080ff;
+  --coschool-dark-blue: #0373e1;
+  --coschool-green: #1DBF73;
+  --coschool-dark-green: #09a85d;
+  --coschool-yellow: #fbad41;
+  --coschool-border: #f4f4f4;
+  --coschool-dark-border: #eee;
+  --coschool-font-family: Graphik;
+}
+.coschool-container h1,
+.coschool-container h2,
+.coschool-container h3,
+.coschool-container h4,
+.coschool-container h5,
+.coschool-container h6 {
+	border: 0;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: var(--coschool-font-family);
+}
+.coschool-container a {
+	background-color: transparent;
+}
+.coschool-container a:active {
+	outline: 0;
+}
+.coschool-container a,
+.coschool-container a:visited,
+.coschool-container a:hover,
+.coschool-container a:focus {
+	text-decoration: none;
+}
+.coschool-container img {
+	border: 0;
+}
+.coschool-container p {
+	color: #50566c;
+	font-size: 15px;
+}
+.coschool-container button,
+.coschool-container input,
+.coschool-container optgroup,
+.coschool-container select,
+.coschool-container textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+.coschool-container s {
+	overflow: visible;
+}
+.coschool-container button,
+.coschool-container select {
+	text-transform: none;
+}
+.coschool-container button,
+.coschool-container html input[type="button"],
+.coschool-container input[type="reset"],
+.coschool-container input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+.coschool-container button[disabled], .coschool-container html input[disabled] {
+	cursor: default;
+	opacity: 0.5;
+}
+.coschool-container button::-moz-focus-inner,
+.coschool-container input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.coschool-container input {
+	line-height: normal;
+}
+.coschool-container input[type="checkbox"],
+.coschool-container input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+.coschool-container h1, 
+.coschool-container h2, 
+.coschool-container h3, 
+.coschool-container h4, 
+.coschool-container h5, 
+.coschool-container h6 {
+	clear: both;
+	font-family: var(--coschool-font-family);
+	font-weight: 500;
+}
+.coschool-container h1 {
+	color: var(--coschool-black);
+	font-size: 30px;
+	line-height: 37px;
+}
+.coschool-container h2 {
+	color: var(--coschool-black);
+	font-size: 24px;
+	line-height: 30px;
+}
+.coschool-container h3 {
+	color: var(--coschool-black);
+	font-size: 25px;
+	line-height: 27px;
+	margin-bottom: 30px;
+}
+.coschool-container h4 {
+	color: var(--coschool-black);
+	font-size: 18px;
+	line-height: 24px;
+}
+.coschool-container ul, 
+.coschool-container ol {
+	margin: 0
+}
+.coschool-container ul {
+	list-style: none;
+}
+.coschool-container img {
+	height: auto;
+	max-width: 100%;
+}
+.coschool-container button, .coschool-container input[type="button"], .coschool-container input[type="reset"], .coschool-container input[type="submit"] {
+	border: 1px solid;
+	border-color: var(--coschool-green)!important;
+	border-radius: 4px;
+	background: var(--coschool-green)!important;
+	padding: 8px 20px;
+	color: var(--coschool-white)!important;
+}
+.coschool-container button:hover, 
+.coschool-container button:focus,
+.coschool-container button:hover,
+.coschool-container button:focus,
+.coschool-container input[type="button"]:hover,
+.coschool-container input[type="button"]:focus,
+.coschool-container input[type="reset"]:hover,
+.coschool-container input[type="reset"]:focus,
+.coschool-container input[type="submit"]:hover,
+.coschool-container input[type="submit"]:focus {
+	color: var(--coschool-white);
+	border-color: #dddfec;
+}
+.coschool-container button:active, 
+.coschool-container button:focus,
+.coschool-container input[type="button"]:active,
+.coschool-container input[type="button"]:focus,
+.coschool-container input[type="reset"]:active,
+.coschool-container input[type="reset"]:focus,
+.coschool-container input[type="submit"]:active,
+.coschool-container input[type="submit"]:focus {
+	border-color: #dddfec;
+	outline: none;
+}
+.coschool-container input[type="text"],
+.coschool-container input[type="email"],
+.coschool-container input[type="url"],
+.coschool-container input[type="password"],
+.coschool-container input[type="search"],
+.coschool-container input[type="tel"],
+.coschool-container textarea {
+	color: #50566c;
+	border: 1px solid #dddfec;
+	border-radius: 2px;
+	-webkit-appearance: none;
+}
+.coschool-container input[type="text"]:focus,
+.coschool-container input[type="email"]:focus,
+.coschool-container input[type="url"]:focus,
+.coschool-container input[type="password"]:focus,
+.coschool-container input[type="search"]:focus,
+.coschool-container input[type="tel"]:focus,
+.coschool-container textarea:focus {
+	color: #50566c;
+}
+.coschool-container textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+.coschool-container a {
+	color: var(--coschool-blue);
+	text-decoration: none;
+	transition: all 0.2s linear;
+}
+.coschool-container a:hover, 
+.coschool-container a:focus {
+	color: midnightblue;
+	text-decoration: none;
+}
+.coschool-container a:focus {
+	outline: thin dotted;
+	text-decoration: none;
+}
+.coschool-container a:hover {
+	outline: 0;
+}
+.coschool-video {
+	width: 100%;
+	height: auto;
+}
+.coschool-video-banner {
+	border-radius: 10px;
+}
+body.single-assignment.coschool,
+body.single-quiz.coschool,
+body.single-lesson.coschool,
+body.single-course.coschool,
+body.post-type-archive.coschool {
+	background-color: var(--coschool-white);
+}
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 15px;
+}
+.grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
+}
+.grid-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 15px;
+}
+.flex {
+	display: flex;
+	column-gap: 15px;
+}
+.border {
+	border: 1px solid #dddfec;
+}
+.coschool-title {
+	font-size: 30px;
+	line-height: 37px;
+	color: #000000;
+	font-family: var(--coschool-font-family);
+	font-weight: 600;
+}
+.coschool-container {
+	width: 100%;
+	max-width: 1240px;
+	margin: auto;
+	background: var(--coschool-white);
+	font-family: var(--coschool-font-family);
+	font-weight: 400;
+	margin: 50px 0;
+}
+.coschool-singular-grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 50px;
+	width: 100%;
+	font-family: var(--coschool-font-family);
+}
+.coschool-singular-title-lg {
+	font-size: 30px;
+	line-height: 37px;
+	color: #000000;
+	font-weight: 500;
+}
+.coschool-singular-title-sm {
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+h2.coschool-parent-course-title a,
+h2.coschool-parent-course-title a:hover{
+	font-weight: 400;
+	font-size: 14px;
+	color: #4e4e4f;
+	text-decoration: none;
+}
+/*coschool tab design*/
+.coschool-tab-items ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	border-bottom: 2px solid #dddfec;
+	flex-wrap: wrap;
+}
+.coschool-tab-items ul li {
+	font-size: 18px;
+	color: #5d5d5d;
+	font-weight: 400;
+	padding: 0px 20px;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 10px;
+	margin-bottom: -2px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	font-family: var(--coschool-font-family);
+}
+.coschool-tab-items .coschool-tab-item:hover, .coschool-tab-items .coschool-tab-item.active {
+	color: var(--coschool-blue);
+	border-bottom: 2px solid var(--coschool-blue);
+}
+.coschool-tab-contents .coschool-tab-content {
+	display: none;
+	margin-top: 15px;
+}
+.coschool-tab-contents .coschool-tab-content.active {
+	display: block;
+}
+/*coschool accordion design*/
+.coschool-accordion-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.coschool-accordion {
+	background: var(--coschool-white);
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+}
+.coschool-accordion-title {
+	font-size: 16px;
+	color: var(--coschool-blue);
+	cursor: pointer;
+	font-family: var(--coschool-font-family);
+}
+.coschool-accordion-header .indicator {
+	transition: .5s;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	padding-right: 2px;
+}
+.coschool-accordion-body {
+	display: none;
+}
+/*.coschool-coures-items .coschool-accordion.active .coschool-accordion-body {
+	display: block;
+}*/
+.coschool-accordion.active .coschool-accordion-header .indicator {
+	transform: rotate(-180deg);
+}
+/**/
+.coschool-course-single .coschool-cs-content {
+	margin-top: 50px;
+}
+
+.coschool-coures-progress {
+}
+.coschool-coures-items {}
+.coschool-coures-items .coschool-accordion {
+	background: transparent;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid #BFBFBF;
+	border-radius: 0;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.coschool-coures-items .coschool-accordion:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.coschool-coures-items .coschool-accordion-header {}
+.coschool-coures-items .coschool-accordion-header .coschool-accordion-title {
+	font-size: 17px;
+	color: var(--coschool-black);
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.coschool-coures-items .coschool-accordion-header .coschool-accordion-title i {
+	/*transform: rotate(-90deg);*/
+}
+.coschool-coures-items .coschool-accordion-body {}
+.coschool-coures-items .coschool-accordion-body ul {
+	padding: 0px;
+}
+.coschool-coures-items .coschool-accordion-body ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #E7E9EA;
+	padding-top: 20px;
+	margin :0px;
+	margin-top: 20px;
+}
+.coschool-accordion-body li a{
+	display: flex;
+	align-items: center;
+}
+.coschool-accordion-body li a span{
+	display: flex;
+	align-items: center;
+}
+.coschool-coures-items .coschool-accordion-body ul li:last-child {}
+.coschool-coures-items .coschool-accordion-body ul li a {
+	font-size: 15px;
+	color: #161616;
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+}
+.coschool-coures-items .coschool-accordion-body ul li a span {
+	margin-right: 10px;
+}
+.coschool-coures-items .coschool-accordion-body ul li a span img {
+	width: 17px;
+}
+.coschool-coures-items .coschool-accordion-body ul li span {
+	color: #c6c6c6;
+	font-size: 16px;
+}
+.coschool-coures-items .coschool-accordion-body ul li span.coschool-green {
+	color: var(--coschool-green);
+}
+.coschool-course-progress-section {
+	background-color: #fbfbfb;
+	padding: 30px 35px;
+	border-radius: 5px;
+}
+.coschool-course-progress-section .coschool-course-progress-title {
+	font-size: 24px;
+	color: var(--coschool-black);
+}
+.coschool-container .coschool-course-progress-title {
+	font-size: 20px;
+}
+.coschool-coures-progress-content {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 1px;
+}
+.coschool-coures-progress-content h4 {
+	font-size: 13px;
+	color: #161616;
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+}
+.coschool-coures-progress-content::after {
+	content: '';
+	width: 100%;
+	height: 4px;
+	background-color: #dceeff;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+}
+.coschool-tab-items ul{
+	padding: 0px;
+}
+.coschool-coures-progress-bar-panel {
+	position: relative;
+	padding: 20px 0;
+	background-color: var(--coschool-white);
+	box-shadow: 2px 4px 8px 0 #0000010a;
+	padding: 20px 15px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+.coschool-coures-progress-bar {
+	background-color: var(--coschool-green);
+	height: 4px;
+	z-index: 99;
+	position: relative;
+}
+.coschool-ls-tag:last-of-type.coschool-green {
+	background-color: #1dbf731f;
+}
+.coschool-ls-tags .coschool-ls-tag.coschool-green span {
+	color: var(--coschool-green);
+}
+.coschool-container .coschool-content-status {
+	padding: 5px 15px;
+	color: var(--coschool-blue);
+	font-size: 14px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #e9edff;
+	height: 36px;
+}
+.coschool-container .coschool-content-status.completed {
+	color: var(--coschool-green);
+    background-color: #1dbf731f;
+}
+#coschool-payment-student .coschool-authentication{
+	margin-bottom: 50px;
+	display: none;
+}
+.coschool-enroll-login{
+	margin-bottom:30px ;
+}
+.coschool-enroll-login label{
+	  padding-bottom: 6px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--coschool-blue);
+}
+.coschool-tab-items li{
+	margin:  0px;
+}
+/*coschool-restriction-notice*/
+.coschool-restriction-notice {
+	border-radius: 15px;
+	background-color: var(--coschool-white);
+	border: 1px solid #f3f3f3;
+	box-shadow: 2px 4px 30px 0 #00000112;
+	text-align: center;
+	padding: 40px;
+	margin-top: 40px;
+}
+.coschool-restriction-notice img {}
+#coschool-tab-content-content .coschool-restriction-notice p {
+	font-size: 18px;
+	line-height: 37px;
+	color: #111156;
+	font-weight: 400;
+	font-family: var(--coschool-font-family);
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.coschool-restriction-notice a {
+	width: 202px;
+	height: 52px;
+	border-radius: 5px;
+	background-color: var(--coschool-blue);
+	color: var(--coschool-white);
+	display: inline-block;
+	line-height: 50px;
+	transition: .4s;
+}
+.coschool-restriction-notice a:hover {
+	background-color: #0373e1;
+	color: var(--coschool-white);
+}
+/*coschool-prerequisites-notice*/
+.coschool-prerequisites {
+	border-radius: 15px;
+	background-color: var(--coschool-white);
+	border: 1px solid #f3f3f3;
+	box-shadow: 2px 4px 30px 0 #00000112;
+	text-align: center;
+	padding: 40px;
+	margin-top: 40px;
+}
+h2.coschool-prerequisites-title {
+	text-align: left;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.coschool-prerequisites-contents ol {
+	margin-bottom: 40px;
+	margin-left: 15px;
+}
+.coschool-prerequisites-contents ol li {
+	text-align: left;
+}
+.coschool-prerequisites-contents ol li a{}
+.coschool-prerequisites-thumbs img{
+	width: 300px;
+}
+/*modal*/
+#coschool-modal {
+	position: fixed;
+	background: #c8c8c859;
+	top: 0;
+	border: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#coschool-modal-loader {
+	position: absolute;
+}
+/*modal ends*/
+.coschool-response-message.error {
+	color: #f74c0a;
+}
+
+/*coschool meta design*/
+.coschool-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	align-items: center;
+	margin: 30px auto;
+	border-top: 1px solid var(--coschool-border);
+	border-bottom: 1px solid var(--coschool-border);
+	padding: 10px 0;
+}
+.coschool-meta-item i {
+	margin-right: 5px;
+}
+.coschool-meta-item:last-child {
+	margin-left: auto;
+}
+
+/*coschool-pagination*/
+.coschool-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+}
+.coschool-pagination span.page-numbers, .coschool-pagination a.page-numbers {
+	width: 42px;
+	height: 42px;
+	border-radius: 25px;
+	background-color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	line-height: 17px;
+	color: #4d4d4d;
+	font-weight: 400;
+	transition: .4s;
+}
+.coschool-pagination a.page-numbers:hover {
+	background-color: #f7f7f7;
+}
+.coschool-pagination a.prev.page-numbers {}
+.coschool-pagination a.next.page-numbers {}
+.coschool-pagination span.page-numbers.current {
+	background-color: var(--coschool-blue);
+	color: var(--coschool-white);
+}
+/*coschool-pagination*/
+
+/*coschool-restriction-notice*/
+@media only screen and (max-width: 440px) {
+	.coschool-singular-grid{
+		grid-template-columns: 1fr;
+	}
+	.course-layout-toggle-btn{
+		display: none!important;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	.coschool-page-title {
+		font-size: 24px;
+	}
+	.coschool-container .coschool-singular-title-sm{
+		font-size: 20px;
+	}
+	.coschool-tab-items ul li {
+		font-size: 14px;
+		padding: 5px;
+	}
+	.coschool-tab-items ul {
+		column-gap: 15px;
+	}
+	.coschool-coures-progress-section .coschool-coures-progress-title {
+		font-size: 24px;
+	}
+	.coschool-coures-items ul li {
+		margin-bottom: 10px;
+	}
+	.coschool-coures-items ul li a {
+		font-size: 15px;
+	}
+	.coschool-course-progress{
+		margin-top: 40px;
+		text-align: center;
+	}
+	.course-layout-toggle-btn{
+		display: none!important;
+	}
+	.coschool-authentication{
+		display: flex!important;
+	}
+	.coschool-student-info{
+		display: block!important;
+	}
+	.coschool-student-info fieldset{
+		margin-top: 15px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+	.coschool-page-title {
+		font-size: 24px;
+	}
+	.coschool-tab-items ul li {
+		font-size: 14px;
+		padding: 5px;
+	}
+	.coschool-tab-items ul {
+		column-gap: 15px;
+	}
+	.coschool-coures-progress-section .coschool-coures-progress-title {
+		font-size: 24px;
+	}
+	.coschool-coures-items ul li {
+		margin-bottom: 10px;
+	}
+	.coschool-coures-items ul li a {
+		font-size: 15px;
+	}
+	.coschool-singular-grid {
+		display: unset;
+	}
+	.coschool-course-progress{
+		margin-top: 40px;
+	}
+}

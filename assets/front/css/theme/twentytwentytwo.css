@@ -1,0 +1,84 @@
+.coschool-container{
+	margin: auto;
+	padding-bottom: 50px;
+}
+.coschool-cs-author-courses{
+    display: flex;
+}
+.coschool-cs-about li{
+    display: flex;
+}
+.coschool-container .coschool-coures-items .coschool-accordion-body ul li a{
+    display: flex;
+}
+.coschool-accordion-body ul{
+    padding-left: 0px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark::after{
+	top: 2px;
+	left: 5px;
+	height: 10px;
+}
+.coschool-dashboard{
+	max-width: 71%!important;
+}
+.coschool-dm-certificate-btn {
+	height: unset!important;
+}
+#coschool-user-switch{
+    padding: 12px 30px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+.coschool-dashboard-body table{
+	width: 100%;
+}
+.coschool-quiz-label{
+	padding: 4px 25px;
+}
+.coschool-container .coschool-content-status{
+	height: 23px;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul::after{
+	width: 40%;
+	bottom: -7px;
+}
+.coschool-dashboard-content th{
+	text-align: left;
+}
+.coschool-payment-wrapper{
+	width: 80%;
+	margin: auto;
+}
+#coschool-cart-form  table{
+	width: 100%;
+}
+#coschool-coupon-apply{
+	top: 50px;
+	font-size: 16px;
+	font-weight: 600;
+}
+.button-one{
+	width: 163px!important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	.coschool-container{
+		width: 90%;
+	}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+	.coschool-container{
+		width: 90%;
+	}
+	.coschool-dashboard{
+		max-width: 100%!important;
+	}
+	.coschool-cs-about ul{
+		padding: 0px;
+	}
+}

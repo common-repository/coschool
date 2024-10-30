@@ -1,0 +1,205 @@
+.coschool-ls-author {
+	display: flex;
+	align-items: center;
+	gap:  10px;
+}
+.coschool-ls-author img {
+	height: 32px;
+	width: 32px;
+	border-radius: 50px;
+}
+.coschool-ls-tabs .coschool-ls-tab-items {
+	padding: 20px 0;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul::after {
+	content: '';
+	width: 80%;
+	height: 2px;
+	background-color: #dddfec;
+	position: absolute;
+	bottom: -2px;
+	display: none;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul li {
+	list-style: none;
+	position: relative;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul li a {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 300;
+}
+.coschool-ls-tabs .coschool-ls-tab-items ul li.active::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: var(--coschool-blue);
+	position: absolute;
+	bottom: -2px;
+	z-index: 1;
+	left: 0;
+}
+.coschool-ls-tabs .coschool-ls-tab-content {}
+.coschool-ls-tabs .coschool-ls-tab-content p {
+	line-height: 30px;
+	color: #50566c;
+	font-weight: 300;
+	margin: 0;
+}
+.coschool-ls-mark-complete-section {
+	margin-top: 30px;
+}
+.coschool-mark-complete {
+	border-radius: 5px;
+	background-color: #1f73e2;
+	display: block;
+	width: 100%;
+	transition: all .4s;
+}
+.coschool-ls-mark-complete-section .coschool-mark-complete:hover {
+	color: #fff;
+	border: 1px solid #00ac5b;
+	background-color: #00ac5b;
+}
+ol.coschool-comment-list {}
+ol.coschool-comment-list li {
+	list-style: none;
+}
+.coschool-comments {
+	display: flex;
+	gap: 20px;
+}
+.coschool-comment-avatar {}
+.coschool-comment-avatar img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.coschool-comment-by {
+	font-size: 16px;
+	color: #202020;
+	font-family: var(--coschool-font-family);
+}
+.coschool-comment-by .author {
+	text-transform: capitalize;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 16px;
+}
+.coschool-comment-by .date {}
+ol.coschool-comment-list li ol.children {
+	padding: 20px 0px 20px 60px;
+}
+ol.coschool-comment-list > li {
+	border-bottom: 1px solid #E6E8F0;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+}
+ol.coschool-comment-list > li:last-child {
+	border-bottom: 0px;
+}
+.coschool-comments .comment-text {
+	font-size: 14px;
+	color: #000000;
+}
+.coschool-comments-area {
+	margin: 0!important;
+}
+.coschool-comments-area h2.comments-title {
+	background-color: #0080ff0d !important;
+	padding: 10px 15px;
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: var(--coschool-blue);
+	font-weight: 500;
+}
+.coschool-comments-area .comment-respond {
+	padding: 0;
+	margin-bottom: 20px;
+}
+.coschool .coschool-comments-area .comment-form-comment {}
+.coschool .coschool-comments-area .comment-form-comment label {}
+.coschool .coschool-comments-area .comment-form-comment textarea {
+	height: 160px;
+	border: 1px solid #E6E8F0;
+	border-radius: 5px !important;
+	padding: 10px;
+}
+.coschool .coschool-comments-area p.form-submit {}
+.coschool .coschool-comments-area p.form-submit input.submit {
+	width: 100%;
+	border-radius: 5px !important;
+	background-color: #f3f5f7 !important;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000 !important;
+	font-weight: 400;
+	font-family: "Nunito";
+	transition: .4s;
+}
+.coschool .coschool-comments-area p.form-submit .submit:hover {
+	background-color: #0080ff !important;
+	color: #fff !important;
+}
+/*.coschool-ls-tags .coschool-ls-tag {
+	font-size: 14px;
+	color: #50566c;
+}
+.coschool-ls-tag:last-of-type {
+	margin-left: auto;
+	border-radius: 5px;
+	background-color: #e9edff;
+	padding: 8px 20px;
+	color: var(--coschool-blue);
+	font-size: 14px;
+}*/
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	.coschool-singular-grid {
+		grid-template-columns: 1fr;
+	}
+	.coschool-ls-tags {
+		column-gap: 15px;
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+	.coschool-ls-tags .coschool-ls-tag {
+		font-size: 13px;
+	}
+	.coschool-ls-tags .coschool-ls-tag span img {
+		width: 18px;
+	}
+	.coschool-ls-tags .coschool-ls-tag span {
+		font-size: 13px;
+		padding-right:  5px;
+	}
+	.coschool-tab-contents .coschool-tab-content {
+		margin-top: 0px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.coschool-singular-grid {
+		display: unset;
+	}
+	.coschool-ls-tags {
+		column-gap: 15px;
+		padding: 10px 0;
+		flex-wrap: wrap;
+	}
+	.coschool-ls-tags .coschool-ls-tag {
+		font-size: 13px;
+	}
+	.coschool-ls-tags .coschool-ls-tag span img {
+		width: 18px;
+	}
+	.coschool-ls-tags .coschool-ls-tag span {
+		font-size: 13px;
+		padding-right:  5px;
+	}
+	.coschool-tab-contents .coschool-tab-content {
+		margin-top: 0px;
+	}
+}

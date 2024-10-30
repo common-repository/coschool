@@ -1,0 +1,451 @@
+.coschool-course-single .coschool-cs-category a{
+	border-radius: 5px;
+	background-color: #fee3dc;
+	padding: 10px 20px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #eb5757;
+	font-weight: 500;
+}
+.coschool-course-single .coschool-cs-categories {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin: 30px auto;
+}
+.coschool-cs-info-label {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--coschool-black);
+}
+.coschool-cs-info-data {
+	font-size: 14px;
+}
+.coschool-course-single .coschool-cs-share {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: end;
+	position: relative;
+}
+.coschool-course-single .coschool-cs-share a {
+	text-decoration: none;
+	border: 1px solid #dddfec;
+	color: #50566c;
+	padding: 6px 13px;
+	border-radius: 50px;
+	font-size: 16px;
+	outline: none;
+}
+.coschool-course-single .coschool-cs-share a i {
+	margin: 0;
+}
+.coschool-share-buttons {
+	position: absolute;
+	right: -20px;
+	top: -65px;
+	padding: 8px 18px;
+	z-index: 11;
+	filter: drop-shadow(0 0 6px rgba(0,0,1,0.05));
+	background-color: #ffffff;
+	border: 0.5px solid #f2f4ff;
+	text-align: center;
+	border-radius: 25px;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+}
+.coschool-share-buttons.hover {
+	visibility: visible;
+	opacity: 1;
+}
+.coschool-share-buttons ul li {}
+.coschool-share-buttons ul {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.coschool-share-buttons::after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 15px 0 15px;
+	border-color: #fff transparent transparent transparent;
+	position: absolute;
+	bottom: -10px;
+	right: 27px;
+	filter: drop-shadow(0 0 6px #0000010d);
+}
+.coschool-course-single .coschool-share-buttons ul li a {
+	padding: 0;
+	border: none;
+	color: #39579f;
+	font-size: 18px;
+	outline: none;
+}
+.coschool-course-single .coschool-share-buttons ul li a.twitter {
+	color: #1ea0f1;
+}
+.coschool-course-single .coschool-share-buttons ul li a.linkedin {
+	color: #ff2d2d;
+}
+.coschool-course-single .coschool-share-buttons ul li a.whatsapp {
+	color: #48dc54;
+}
+.coschool-course-single .coschool-cs-thumbnail {
+	margin-bottom: 40px;
+}
+.coschool-course-single .coschool-cs-thumbnail img {
+	width: 100%;
+	border-radius: 10px;
+}
+/*course summerry*/
+.coschool-course-single .coschool-cs-summery {
+	border: 1px solid var(--coschool-border);
+	border-radius: 10px;
+}
+.coschool-course-single .coschool-cs-summery-section {
+	padding: 35px 40px;
+	border-bottom: 1px solid var(--coschool-border);
+}
+.coschool-course-single .coschool-cs-summery-section:last-child{
+	border-bottom: none;
+}
+.coschool-cs-summery-section.coschool-cs-enrol {
+	padding: 40px;
+	text-align: center;
+}
+.coschool-cs-summery-section ul li img {
+	width: 18px;
+	height: 18px;
+	margin-right: 15px;
+}
+.coschool-course-single .coschool-cs-summery-title {
+	font-size: 20px;
+	color: #000000;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.coschool-cs-author-section .coschool-singular-title-sm {
+	margin-bottom: 30px;
+}
+.coschool-course-single .coschool-cs-author-image {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.coschool-course-single .coschool-cs-author {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.coschool-course-single .coschool-cs-author-name {
+	font-size: 20px;
+	color: var(--coschool-black);
+	font-weight: 600;
+	line-height: 17px;
+	font-family: var(--coschool-font-family);
+}
+.coschool-course-single .coschool-cs-author-rank {
+	font-size: 16px;
+	color: #50566c;
+	font-weight: 400;
+}
+.coschool-course-single .coschool-cs-author-summery {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	align-items: center;
+}
+.coschool-course-single .coschool-cs-author-rating {
+	font-size: 15px;
+	line-height: 17px;
+	color: #50566c;
+	font-weight: 600;
+}
+.coschool-course-single .coschool-cs-author-rating .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 13px;
+	color: var(--coschool-yellow);
+}
+.coschool-course-single .coschool-cs-author-rating .dashicons:first-child {
+	margin-left: 10px;
+}
+.coschool-course-single .coschool-cs-author-courses {
+	font-size: 15px;
+	color: #505050;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+}
+.coschool-course-single .coschool-cs-about ul {
+	list-style: none;
+	padding: 0px;
+}
+.coschool-course-single .coschool-cs-about ul li {
+	margin: 10px auto;
+	font-size: 15px;
+	color: #50566c;
+	display: flex;
+	align-items: center;
+}
+.coschool-course-single .coschool-cs-price {
+	font-size: 25px;
+	line-height: 19px;
+	color: var(--coschool-blue);
+	font-weight: 600;
+	font-family: var(--coschool-font-family);
+}
+.coschool-course-single a.coschool-cs-enrol-btn {
+	border-radius: 5px;
+	background-color: var(--coschool-blue);
+	display: block;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 14px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: var(--coschool-font-family);
+	margin-top: 35px;
+	transition: .4s;
+}
+.coschool-course-single a.coschool-cs-enrol-btn:hover {
+	background-color: #0373e1;
+}
+.coschool-cs-author-courses img {
+	width: 18px;
+	margin-right: 8px;
+}
+/**/
+.coschool-course-single .coschool-cs-content {
+	margin-top: 30px;
+}
+.coschool-cs-content .coschool-cs-content-title {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.coschool-cs-chapters {
+	margin-top: 20px;
+}
+ul.coschool-cs-content-items {
+	list-style: none;
+	margin: 0;
+	margin-top: 15px;
+}
+ul.coschool-cs-content-items li {
+	font-size: 15px;
+	color: #555;
+	margin: 5px auto;
+}
+ul.coschool-cs-content-items li i {
+	margin-right: 10px;
+	color: #555;
+}
+ul.coschool-cs-content-items li i.fa-lock {
+	margin-left: 7px;
+	color: #a4a4a4;
+}
+.coschool-cs-author-name a {
+	color: var(--coschool-black);
+	font-size: 20px;
+	font-weight: 500;
+}
+/*review tab designing*/
+.coschool-csr-card {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	padding: 20px;
+	border-radius: 11px;
+	box-shadow: 0px 3px 3.5px rgba(0,0,1,0.07);
+	background-color: #ffffff;
+	margin-bottom: 30px;
+}
+.coschool-csr-card-left {
+	padding-left: 20px;
+}
+.coschool-csr-progressbar {
+	display: grid;
+	gap: 10px;
+	align-items: center;
+	grid-template-columns: 5fr 9fr;
+}
+.coschool-csr-progressbar .coschool-csr-pbar-text {
+	font-size: 12px;
+	color: #636464;
+}
+.coschool-csr-progressbar .coschool-csr-pbar {
+	height: 7px;
+	background: #ccc;
+	width: 100%; 
+}
+.coschool-csr-progressbar .coschool-csr-pbar-inner {
+	height: 7px;
+	background: var(--coschool-yellow);
+}
+.coschool-csr-stars .dashicons {
+	color: var(--coschool-yellow);
+	font-size: 17px;
+	width: 18px;
+	height: 17px;
+}
+.coschool-csr-total{
+	font-size: 12px;
+	color: #636464;
+}
+.coschool-csr-avg .coschool-csr-avg-pt{
+	font-size: 30px;
+	color: #030303;
+}
+.coschool-csr-avg .coschool-csr-total-pt {
+	font-size: 16px;
+}
+.coschool-csr-reviews .coschool-singular-title-sm {
+	margin-bottom: 30px;
+}
+/*review card*/
+.coschool-csr-review {
+	border-radius: 11px;
+	box-shadow: 0px 3px 3.5px rgba(0,0,1,0.07);
+	background-color: #ffffff;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+}
+.coschool-csr-review.children {
+	margin-left: 70px;
+}
+.coschool-csr-review-author-img {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	overflow: hidden;
+}
+.coschool-csr-review-author-img img {
+	width: 100%;
+	height: 100%;
+}
+.coschool-csr-review-header {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.coschool-csr-review-author-name {
+	font-size: 18px;
+	color: #202020;
+	font-weight: 500;
+}
+.coschool-csr-review-time {
+	font-size: 14px;
+	color: #656565;
+	font-weight: 400;
+}
+.coschool-csr-review-star {
+	height: 17px;
+}
+.coschool-csr-review-star .dashicons {
+	width: 18px;
+	height: 18px;
+	color: var(--coschool-yellow);
+	line-height: 18px;
+}
+.coschool-csr-progressbar .coschool-csr-pbar-text .dashicons {
+	font-size: 16px;
+}
+.coschool-csr-review-content {
+	font-size: 14px;
+	line-height: 24px;
+	color: #656565;
+}
+/*notice section*/
+.coschool-cs-notices-section {
+	width: 100%;
+}
+.coschool-cs-notices-section .coschool-accordion-title {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 400;
+}
+.coschool-cs-notices-section .coschool-accordion-header i {
+	font-size: 18px;
+	color: #c4c3c8;
+}
+.coschool-cs-notices-section .coschool-notice-time {
+	font-size: 15px;
+	color: #656565;
+	font-weight: 400;
+	margin-left: 12px;
+}
+.coschool-cs-notices-section .coschool-accordion-body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.coschool-cs-notices-section .coschool-accordion-body li {
+	margin-left: 30px;
+}
+/*faq section*/
+.coschool-cs-faqs-section {
+	width: 100%;
+}
+.coschool-cs-faqs-section .coschool-accordion-title {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 400;
+}
+.coschool-cs-faqs-section .coschool-accordion-header .indicator {
+	font-size: 18px;
+	color: #1f73e2;
+	background: #eeeeee;
+	padding: 7px;
+	border-radius: 30px;
+}
+.coschool-cs-faqs-section .coschool-accordion-header .indicator.fa-minus {
+	display: none;
+	transition: .5s;
+}
+.coschool-cs-faqs-section .coschool-accordion.active .indicator.fa-minus {
+	display: block;
+	transition: .5s;
+	transform: rotate(0deg);
+}
+.coschool-cs-faqs-section .coschool-accordion.active .indicator.fa-plus {
+	display: none;
+}
+.coschool-cs-faqs-section .coschool-accordion-body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.coschool-cs-faqs-section .coschool-accordion-body li {
+	margin-left: 30px;
+}
+.coschool-course-single .coschool-wishlist-btn.added {
+	background-color: #F9595F;
+	border: 1px solid #F9595F;
+	color: #fff;
+}
+
+/*responsive css*/
+@media only screen and (max-width: 460px) {
+	.coschool-csr-card {
+		grid-template-columns: 1fr;
+	}
+	.coschool-csr-card-left {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.coschool-csr-review-header {
+		flex-wrap: wrap;
+	}
+	.coschool-cs-notices-section .coschool-accordion-title {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

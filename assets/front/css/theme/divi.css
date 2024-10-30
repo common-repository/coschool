@@ -1,0 +1,107 @@
+
+.coschool-student-info fieldset {
+	border: 1px solid #c7c1c1;
+}
+#coschool-cart-form > table {
+    border: none;
+}
+.coschool-student-info fieldset input {
+	padding: 10px 0px;
+}
+#coschool-cart-form table td{
+    border-top: 0px;
+}
+#coschool-coupon-apply{
+	border: 0px;	
+}
+#coschool-cart tfoot{
+    border-top: 1px;
+    border-bottom: 1px;
+}
+/*All Course Page*/
+
+.coschool-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 58px;}
+
+/*Log in Page*/
+
+.coschool-authentication form{
+	margin-bottom: 40px;
+}
+.coschool-authentication .login-username input{
+	padding: 10px 0px;
+}
+.coschool-authentication .login-password input {
+	padding: 10px 0px;
+}
+
+/*Dash board*/
+
+.coschool-dashboard-content .coschool-dashboard-cards{
+	gap: 5px !important;
+} 
+#coschool-dashboard-card-completed{
+	gap: 0px !important;
+}
+.coschool-nav-item{
+    list-style: none ;
+}
+/*Profile*/
+.coschool-dashboard-profile-info {
+	display: table-column-group !important;
+}
+
+.manage-column{
+    border: 1px solid #eeeeee;
+}
+.coschool-accordion-body a{
+    display: flex;
+}
+.coschool-accordion-body img{
+    margin-top: 4px;
+}
+.coschool-cs-author-courses{
+    display: flex;
+}
+#coschool-user-switch{
+    padding: 12px 30px!important;
+}
+.coschool-container .coschool-content-status{
+    padding: 6px 15px;
+    height: 34px;
+}
+.coschool-mark-complete{
+    height: 45px;
+    padding: 12px!important;
+}
+#coschool-payment-button{
+    padding: 13px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark::after{
+    left: 4px;
+    top: 0px;
+    height: 10px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark{
+    top: 2px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+
+    .coschool-quiz-label .coschool-quiz-checkmark{
+        top: 0px;
+    }
+    .coschool-quiz-label .coschool-quiz-checkmark::after{
+        left: 4px;
+        top: 0px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+
+}

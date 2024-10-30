@@ -1,0 +1,78 @@
+/*Archive Page*/
+.coschool-container{
+	margin: 0 auto;
+}
+/*Transactions*/
+#current-page-selector{
+	width: 10%;
+}
+.button{
+    border-width: 1px !important;
+}
+.wp-list-table > thead > tr > th, .wp-list-table > tbody > tr > td, .wp-list-table > tfoot > tr > th{
+	border: 1px solid #eee;
+}
+.coschool-login-log-table > tbody > tr > td {
+	border-bottom: 1px solid #eee !important;
+}
+.manage-column > a{ 
+	color: inherit;
+}
+.coschool-dm-progress-bar{
+	width: 80% !important;
+}
+.coschool-student-info fieldset {
+	border: 1px solid #c7c1c1;
+}
+.coschool-cs-author-courses{
+	display: flex;
+}
+.coschool-cs-about li{
+	display: flex;
+	margin: 12px auto;
+}
+.coschool-dm-course-author{
+	display: flex;
+}
+.coschool-avatar img{
+	display: inline;
+}
+.coschool-dashboard-card .edc-text{
+	font-size: 12px;
+}
+.coschool-accordion-body a{
+	display: flex;
+}
+.coschool-accordion-body ul li a span{
+	margin-top: 5px;
+}
+#coschool-payment-button{
+	padding: 10px;
+}
+#coschool-login-form .button{
+	padding: 15px;
+}
+.coschool-container .coschool-content-status{
+	padding: 7px 15px;
+	height: 35px;
+}
+.coschool-user-switch-panel #coschool-user-switch{
+	padding: 10px 30px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	.coschool-container{
+		width: 90%;
+	}
+	.coschool-ls-tabs .coschool-ls-tab-items ul::after{
+	display: none;
+	}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+	.coschool-container{
+		width: 90%;
+	}
+}

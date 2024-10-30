@@ -1,0 +1,41 @@
+.button{
+	border-style: solid;
+    color: inherit;
+    border-radius: 2px;
+    border: 1px solid #0170b9;
+}
+.manage-column > a{ 
+    color: inherit;
+}
+.coschool-container .coschool-content-status{
+    padding: 8px 15px;
+    height: 35px;
+}
+.coschool-quiz-label .coschool-quiz-checkmark{
+    top: 4px;
+}
+#coschool-payment-button{
+    padding: 11px;
+    height: 45px;
+}
+#coschool-payment-form .coschool-student-info fieldset{
+    border: 1px solid #cccccc;
+}
+#coschool-user-switch{
+    padding: 11px 35px!important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .coschool-container{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .coschool-container{
+        width: 90%;
+        margin: auto;
+    }
+}
